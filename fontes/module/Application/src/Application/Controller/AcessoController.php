@@ -9,7 +9,10 @@
 namespace Application\Controller;
 
 
-class AcessoController extends ApplicationAbstractController
+use Zend\Mvc\Controller\AbstractActionController;
+
+class AcessoController extends AbstractActionController
 {
+
 
 }
