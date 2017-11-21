@@ -1,0 +1,136 @@
+<div id="logo-sistema">
+    <a href="<?php echo $this->url("home"); ?>">
+        <div class="ls ls-nome-negativo" data-font-size="14"
+             data-nome-logo="Plataforma Carolina Bori"></div>
+    </a>
+</div>
+<div id="container-nav">
+    <nav class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <span class="nome-sistema">Sistema Nacional de
+                    Revalida&ccedil;&atilde;o e Reconhecimento de Diplomas</span>
+            </div>
+            <div class="col-md-6 " >
+                <?php if (!$this->identity()): ?>
+                    <div class="btn-group manualtopo">
+                        <a href="../Base_SSDv4_0.pdf " target="_blank" data-toggle="tooltip2"
+                           data-placement="bottom" title="Manual de Acesso" >
+                            <i class = "fa fa-file-text "> </i>
+                        </a>
+                    </div>
+                <?php endif;?>
+            </div>
+            <div class="col-md-6">
+                <?php if ($this->identity()):
+                    isset($this->identity()->coFuncao)?$coFuncao = $this->identity()->coFuncao:$coFuncao = null;
+                    ?>
+                    <div class="btn-group pull-right">
+                        <div class="btn-group">
+                            <button type="left" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <?php echo $this->identity()->noUsuario ?>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" id="dropdown-config">
+                                <li>
+                                    <strong>Nome:</strong> <?php echo $this->identity()->noUsuario ?>
+                                </li>
+                                <?php if(isset($this->identity()->rne)): ?>
+                                    <li>
+                                        <strong>RNE:</strong> <?php echo $this->identity()->rne ?>
+                                    </li>
+                                <?php else: ?>
+                                    <li>
+                                        <strong>CPF:</strong>
+                                        <?php echo $this->escapehtml( \Application\Util\StringUtil::mask(
+                                            $this->identity()->cpf , '###.###.###-##')
+                                        );?>
+                                    </li>
+                                    <?php
+                                endif;
+                                if (isset($this->identity()->noPerfil) && !empty($this->identity()->noPerfil)): ?>
+                                    <li>
+                                        <strong>Perfil:</strong> <?php echo $this->identity()->noPerfil ?>
+                                    </li>
+                                <?php endif; ?>
+                                <li>
+                                    <strong>&Uacute;ltimo Acesso:</strong> <?php echo $this->identity()->dtUltimoAcesso ?>
+                                </li>
+                                <hr/>
+                                <li>
+                                    <?php
+                                    if(!isset($this->identity()->rne)):
+                                        ?>
+                                        <a href="<?php echo $this->url('redirecionamentoUsuario',
+                                            array('s' => 51)); ?>"
+                                           class="btn btn-success btn-user pull-right">Editar</a>
+                                        <?php
+                                    endif;
+                                    ?>
+                                    <a href="<?php echo $this->url('application',
+                                        array('controller' => 'index', ACTION => 'sair')) ?>"
+                                       class="btn btn-danger btn-user pull-right">Sair</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <?php if (!empty($this->identity()->noIes) && in_array($coFuncao,[5, 6, 4,11])): ?>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <span class="nav-hide">Institui&ccedil;&atilde;o de Ensino</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li>
+                                        <a href="#"><?php echo $this->identity()->noIes ?></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
+                        <?php if (in_array($coFuncao,[8,1,2]) && !empty($coFuncao)) {?>
+                               <div class="btn-group">
+                                    <a href="../Base_Requerentev4_0.pdf" target="_blank" data-toggle="tooltip2" class = "btn btn-default"
+                                       data-placement="bottom" title="<?php  echo "Manual do Requerente"?>">
+                                        <i class = "fa fa-file-text fa-align-right"> </i>
+                                    </a>
+
+                                </div>
+                            <?php } if(!in_array($coFuncao,[8]) && !empty($coFuncao)){ ?>
+                                <div class="btn-group">
+                                    <a href="../Base_IEv4_0.pdf " target="_blank" data-toggle="tooltip2" class = "btn btn-default"
+                                       data-placement="bottom" title="<?php echo "Manual IES"?>">
+                                        <i class = "fa fa-file-text fa-align-right"> </i>
+                                    </a>
+                                </div>
+                            <?php } ?>
+                        <?php if(!in_array($coFuncao,[1,2]) && !empty($coFuncao)):?>
+                        <div class="btn-group">
+                            <a href="/fale-conosco/index.phtml" data-toggle="tooltip3" class = "btn btn-default"
+                               data-placement="bottom" title="<?php  echo 'Fale Conosco';?>">
+                                <i class = "fa fa-envelope"> </i>
+                            </a>
+                        </div>
+                        <?php endif;?>
+                    </div>
+                <?php endif;?>
+            </div>
+        </div>
+    </nav>
+    <input type="hidden" name="coFuncao" id="idCoFuncao" value="<?php echo isset($coFuncao);?>">
+</div>
+<script language="JavaScript">
+    $(document).ready(function(){
+        _url_perfil = "/index/tela-inicial"
+        _url_acesso = "/usuario/acesso"
+
+        $('[data-toggle="tooltip2"],[data-toggle="tooltip3"]').tooltip();
+        if (in_array(window.location.pathname, array(_url_perfil, _url_acesso)) && !in_array($('#idCoFuncao').val(),[1,2])) {
+            $('[data-toggle="tooltip2"]').tooltip('show');
+            setTimeout(function () {
+                $('[data-toggle="tooltip2"]').tooltip('hide');
+            }, 1000);
+        }
+
+
+    });
+</script>

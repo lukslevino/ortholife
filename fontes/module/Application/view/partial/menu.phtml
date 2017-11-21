@@ -1,0 +1,20 @@
+<?php
+$session = new \Zend\Session\Container('Menu');
+$menu = $session->menu;
+
+$menu = $this->menuHelper($menu);
+
+if (!empty($menu)) {
+    foreach ($menu as $modulo => $telas) {
+        ?>
+        <li><a href="javascript:void(0);"><?php echo $modulo; ?><i class="fa fa-chevron-down pull-right"></i></a>
+            <ul>
+                <?php foreach ($telas as $nomeTela => $url): ?>
+                    <li><a href="<?php echo $this->url('default', $url); ?>"><?php echo $nomeTela; ?></a></li>
+                <?php endforeach; ?>
+
+            </ul>
+        </li>
+
+    <?php }
+} ?>
