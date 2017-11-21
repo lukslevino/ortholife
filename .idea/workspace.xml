@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a90343a2-61a8-4621-88e2-33ce3bf5dc27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/module/Application/view/partial/menu.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/module/Application/view/partial/rodape.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/module/Application/view/partial/topo.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/config/autoload/navigation.global.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/config/autoload/property.global.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/config/autoload/resource.private.global.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/module/Application/src/Application/View/Helper/AcoesGridProcessoHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/module/Application/src/Application/View/Helper/DataSolicitacaoHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontes/module/Application/src/Application/View/Helper/MenuHelper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontes/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/fontes/module/Application/view/layout/layout.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontes/module/Application/Module.php" afterPath="$PROJECT_DIR$/fontes/module/Application/Module.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fontes/module/Application/view/application/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -40,6 +43,38 @@
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="e#2844#2850#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Module.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fontes/module/Application/Module.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="972" column="5" lean-forward="false" selection-start-line="972" selection-start-column="5" selection-end-line="972" selection-end-column="5" />
+              <folding>
+                <element signature="e#354#387#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.local.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fontes/config/autoload/menu.local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fontes/module/Application/src/Application/View/Helper/MenuHelper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-75">
+              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,6 +155,7 @@
         <option value="$PROJECT_DIR$/fontes/module/Application/view/application/index/index.phtml" />
         <option value="$PROJECT_DIR$/fontes/module/Application/view/application/usuario/solicitar-acesso.phtml" />
         <option value="$PROJECT_DIR$/fontes/module/Application/view/layout/layout.phtml" />
+        <option value="$PROJECT_DIR$/fontes/module/Application/Module.php" />
       </list>
     </option>
   </component>
@@ -414,6 +450,48 @@
               <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ortholife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ortholife" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fontes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Helper" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -480,6 +558,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ortholife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ortholife" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fontes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -596,11 +704,11 @@
       <recent name="D:\Users\lazevedol\PhpstormProjects\ortholife\fontes\module\Application\src\Application\Controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lucaslevino\PhpstormProjects\ortholife\fontes\module\Application\view\partial" />
       <recent name="C:\Users\lucaslevino\PhpstormProjects\ortholife\fontes\config\autoload" />
+      <recent name="C:\Users\lucaslevino\PhpstormProjects\ortholife\fontes\module\Application\src\Application\View" />
+      <recent name="C:\Users\lucaslevino\PhpstormProjects\ortholife\fontes\module\Application\view\partial" />
       <recent name="C:\Users\lucaslevino\PhpstormProjects\ortholife\fontes\module\Application\src\Application\Service" />
       <recent name="C:\Users\lucaslevino\PhpstormProjects\ortholife\fontes\public" />
-      <recent name="C:\Users\lucaslevino\PhpstormProjects\ortholife\fontes\module\Application\src\Application" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -1598,10 +1706,18 @@
       <workItem from="1510971474255" duration="24264000" />
       <workItem from="1511184136856" duration="15727000" />
     </task>
+    <task id="LOCAL-00001" summary="[add] configuracao do layout">
+      <created>1511294547332</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511294547332</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48701000" />
+    <option name="totallyTimeSpent" value="49134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1646,13 +1762,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[add] configuracao do layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] configuracao do layout" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/SVN MEC/TraineeMEC/fontes/vendor/phpoffice/phpword/samples/bootstrap/css/bootstrap.min.css" />
-    <entry file="file://$USER_HOME$/Documents/SVN MEC/TraineeMEC/fontes/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/bootstrap.min.css" />
     <entry file="file://$USER_HOME$/Documents/SVN MEC/TraineeMEC/fontes/public/index.php" />
     <entry file="file://$USER_HOME$/Documents/SVN MEC/TraineeMEC/fontes/config/autoload/navigation.global.php" />
     <entry file="file://$USER_HOME$/Documents/SVN MEC/TraineeMEC/fontes/config/autoload/resource.private.global.php" />
@@ -1743,6 +1861,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1750,6 +1869,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1757,6 +1877,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1833,13 +1954,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fontes/module/Application/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1932,6 +2047,32 @@
             <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="e#2844#2850#1#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontes/module/Application/src/Application/View/Helper/MenuHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontes/module/Application/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="972" column="5" lean-forward="false" selection-start-line="972" selection-start-column="5" selection-end-line="972" selection-end-column="5" />
+          <folding>
+            <element signature="e#354#387#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontes/config/autoload/menu.local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
